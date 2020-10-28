@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>transaction</title>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1>{{ paymentStatus }}</h1>
+      {% if orders %}
+      <p>Cash : <span>100 MMK</span></p>
+      <p>Order ID: <span>{{ orders.order_id }}</span></p>
+      {% endif %}
+    </div>
+
+   <div class="">
+     <a href="{{ url_for('index') }}">Go back to checkout</a>
+   </div>
+  </body>
+</html>
